@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.book {
+  display: grid;
+  position: relative;
+  place-items: center;
+  box-shadow: 0 0 4px gray;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.cart-btn {
+  position: absolute;
+  opacity: 0;
+  top: 0.25rem;
+  right: 0.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: none;
+  transition: all 0.5s;
+}
+.cart-btn:hover {
+  color: blueviolet;
+}
+.book:hover > .cart-btn {
+  opacity: 1;
+}
+.book:hover {
+  box-shadow: 0 0 7px gray;
+}
+.p-2 {
+  padding: 0.2rem;
+}
+.m-5 {
+  margin: 0.5rem;
+}
